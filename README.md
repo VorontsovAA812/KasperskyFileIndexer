@@ -32,7 +32,7 @@ mvn clean package
 ### 2. Запуск приложения
 Запустите программу, указав путь к директории для индексации:
 ```bash
-java -jar target/KasperskyFileIndexer-1.0-SNAPSHOT.jar /путь/к/папке
+java -jar target/KasperskyFileIndexer-1.0-SNAPSHOT.jar /путь/к/папке (с документами .txt)
 ```
 
 ### 3. Запуск тестов
