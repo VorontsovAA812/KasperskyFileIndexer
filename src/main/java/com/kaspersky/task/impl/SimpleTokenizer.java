@@ -12,7 +12,7 @@ public class SimpleTokenizer implements Tokenizer {
         if (content == null || content.isEmpty()) {
             return Set.of();
         }
-        return Arrays.stream(content.toLowerCase().split("\\W+"))
+       return Arrays.stream(content.toLowerCase().split("[^\\p{L}\\p{N}]+"))
                 .filter(word -> !word.isEmpty())
                 .collect(Collectors.toSet());
     }
